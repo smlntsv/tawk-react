@@ -4,6 +4,8 @@ import tseslint from 'typescript-eslint'
 import pluginReact from 'eslint-plugin-react'
 import pluginPrettier from 'eslint-plugin-prettier'
 import configPrettier from 'eslint-config-prettier'
+import pluginStorybook from 'eslint-plugin-storybook'
+import { globalIgnores } from 'eslint/config'
 
 /** @type {import('eslint').Linter.Config[]} */
 export default [
@@ -12,6 +14,7 @@ export default [
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+  ...pluginStorybook.configs['flat/recommended'],
   {
     plugins: {
       prettier: pluginPrettier,
@@ -26,4 +29,5 @@ export default [
       'react/react-in-jsx-scope': 'off',
     },
   },
+  globalIgnores(['!.storybook']),
 ]
