@@ -1,0 +1,32 @@
+{
+  "name": "tawk-react",
+  "version": "0.0.1",
+  "description": "React wrapper for tawk.to live chat",
+  "keywords": [
+    "react",
+    "tawk",
+    "tawkto",
+    "tawk.to",
+    "react-tawk"
+  ],
+  "homepage": "https://github.com/smlntsv/tawk-react#readme",
+  "bugs": {
+    "url": "https://github.com/smlntsv/tawk-react/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/smlntsv/tawk-react.git"
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Dima Smolentsev",
+    "email": "smolentsevdn@gmail.com",
+    "url": "https://dima-dev.com"
+  },
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/types/index.d.ts",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
