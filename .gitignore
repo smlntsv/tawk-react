@@ -1,4 +1,15 @@
+# WS Config Files
 .idea
+
+# Deps
 node_modules
+
+# Build output
 dist
+
+# Storybook
 *storybook.log
+
+# Env files
+.env*
+!.env.example
