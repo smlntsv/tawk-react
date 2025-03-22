@@ -16,7 +16,7 @@ import {
   TawkAPI_minimize,
   TawkAPI_popup,
   TawkAPI_removeTags,
-  TawkAPI_setAttribute,
+  TawkAPI_setAttributes,
   TawkAPI_showWidget,
   TawkAPI_shutdown,
   TawkAPI_start,
@@ -25,7 +25,7 @@ import {
   TawkAPI_toggleVisibility,
 } from '../types/tawk'
 
-type TawkActions = {
+export type TawkActions = {
   start: TawkAPI_start
   shutdown: TawkAPI_shutdown
   switchWidget: TawkAPI_switchWidget
@@ -46,7 +46,7 @@ type TawkActions = {
   isChatOngoing: TawkAPI_isChatOngoing
   isVisitorEngaged: TawkAPI_isVisitorEngaged
   endChat: TawkAPI_endChat
-  setAttribute: TawkAPI_setAttribute
+  setAttributes: TawkAPI_setAttributes
   addEvent: TawkAPI_addEvent
   addTags: TawkAPI_addTags
   removeTags: TawkAPI_removeTags
@@ -140,7 +140,7 @@ function useTawkAction(): TawkActions {
       if (!isActionsAvailable()) return
       window.Tawk_API.endChat()
     },
-    setAttribute: (attributes, callback) => {
+    setAttributes: (attributes, callback) => {
       if (!isActionsAvailable()) {
         return callback(new Error('Tawk is not ready.'))
       }

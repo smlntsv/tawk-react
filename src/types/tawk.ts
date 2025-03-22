@@ -119,7 +119,7 @@ export type TawkEventMap = {
 }
 
 // For global declaration
-export type TawkAPI_start = ({ showWidget }?: { showWidget: boolean }) => void
+export type TawkAPI_start = ({ showWidget }: { showWidget: boolean }) => void
 export type TawkAPI_shutdown = () => void
 export type TawkAPI_switchWidget = (
   { propertyId, widgetId }: { propertyId: string; widgetId: string },
@@ -153,7 +153,7 @@ export type TawkAPI_isChatHidden = () => boolean | undefined
 export type TawkAPI_isChatOngoing = () => boolean | undefined
 export type TawkAPI_isVisitorEngaged = () => boolean | undefined
 export type TawkAPI_endChat = () => void
-export type TawkAPI_setAttribute = (
+export type TawkAPI_setAttributes = (
   attributes: Record<string, string>,
   callback: BasicCallback
 ) => void

@@ -20,7 +20,7 @@ import {
   TawkAPI_isChatOngoing,
   TawkAPI_isVisitorEngaged,
   TawkAPI_endChat,
-  TawkAPI_setAttribute,
+  TawkAPI_setAttributes,
   TawkAPI_addEvent,
   TawkAPI_addTags,
   TawkAPI_removeTags,
@@ -53,7 +53,7 @@ declare global {
       isChatOngoing: TawkAPI_isChatOngoing
       isVisitorEngaged: TawkAPI_isVisitorEngaged
       endChat: TawkAPI_endChat
-      setAttributes: TawkAPI_setAttribute
+      setAttributes: TawkAPI_setAttributes
       addEvent: TawkAPI_addEvent
       addTags: TawkAPI_addTags
       removeTags: TawkAPI_removeTags
