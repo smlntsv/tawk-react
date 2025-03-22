@@ -10,8 +10,8 @@ export default defineConfig({
       fileName: (format, entryName) => `${entryName}.${format}.js`,
     },
     rollupOptions: {
-      external: ['react/jsx-runtime'],
+      external: ['react', 'react/jsx-runtime'],
     },
   },
-  plugins: [dts({ rollupTypes: false })],
+  plugins: [dts({ rollupTypes: true })],
 })
