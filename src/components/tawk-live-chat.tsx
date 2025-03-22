@@ -46,4 +46,5 @@ const TawkLiveChat: FC<TawkLiveChatProps> = ({
   return null
 }
 
+export type { TawkLiveChatProps }
 export { TawkLiveChat }
