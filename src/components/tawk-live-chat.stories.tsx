@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { TawkLiveChat } from './taw-live-chat'
+import { TawkLiveChat, TawkLiveChatProps } from '../main'
 
 export default {
   title: 'Tawk Live Chat',
@@ -31,7 +31,7 @@ export const Default: Story = {
       zIndex: 10,
     },
   },
-  render: ({ propertyId, widgetId, customStyle }) => {
+  render: ({ propertyId, widgetId, customStyle }: TawkLiveChatProps) => {
     return <TawkLiveChat propertyId={propertyId} widgetId={widgetId} customStyle={customStyle} />
   },
 }
