@@ -29,6 +29,15 @@
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "import": "./dist/main.es.js",
+      "require": "./dist/main.cjs.js",
+      "default": "./dist/main.cjs.js"
+    },
+    "./package.json": "./package.json"
+  },
   "scripts": {
     "test": "vitest run",
     "test:dev": "vitest",
