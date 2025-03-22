@@ -7,6 +7,8 @@ export default defineConfig({
     environment: 'jsdom',
     coverage: {
       provider: 'v8',
+      include: ['src/**/*'],
+      exclude: ['src/**/*.stories.ts', 'src/**/*.stories.tsx'],
     },
   },
 })
