@@ -30,8 +30,8 @@
     "dist"
   ],
   "scripts": {
-    "test": "vitest",
-    "test:dev": "vitest --watch",
+    "test": "vitest run",
+    "test:dev": "vitest",
     "test:coverage": "vitest run --coverage",
     "build": "vite build",
     "build:watch": "vite build --watch",
@@ -48,6 +48,8 @@
     "@storybook/react": "^8.6.7",
     "@storybook/react-vite": "^8.6.7",
     "@storybook/test": "^8.6.7",
+    "@testing-library/jest-dom": "^6.6.3",
+    "@testing-library/react": "^16.2.0",
     "@types/react": "^19.0",
     "@vitejs/plugin-react": "^4.3.4",
     "@vitest/coverage-v8": "^3.0.9",
