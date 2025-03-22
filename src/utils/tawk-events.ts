@@ -11,7 +11,6 @@ function subscribeToTawkWindowEvents(): () => void {
   const handleEvent = (event: Event): void => {
     const customEvent = event as CustomEvent
     const eventName = customEvent.type as keyof TawkEventMap
-    // const eventData = customEvent.detail as TawkEventMap[typeof eventName]
     const eventData = customEvent.detail as Parameters<TawkEventMap[typeof eventName]>
 
     const listeners = subscriptions.get(eventName) ?? []
