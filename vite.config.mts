@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
+import preserveDirectives from 'rollup-preserve-directives'
 
 export default defineConfig({
   build: {
@@ -13,5 +14,5 @@ export default defineConfig({
       external: ['react', 'react/jsx-runtime'],
     },
   },
-  plugins: [dts({ rollupTypes: true })],
+  plugins: [dts({ rollupTypes: true }), preserveDirectives()],
 })
