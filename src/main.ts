@@ -1,4 +1,5 @@
-export { TawkLiveChat, TawkLiveChatProps } from './components/tawk-live-chat'
+export { TawkLiveChat } from './components/tawk-live-chat'
+export type { TawkLiveChatProps } from './components/tawk-live-chat'
 export { useTawkEvent } from './hooks/use-tawk-event'
 export { useTawkAction } from './hooks/use-tawk-action'
 export { TawkEvent } from './types/tawk'
