@@ -1,3 +1,5 @@
+'use client'
+
 import { FC, useEffect } from 'react'
 import { loadScript, removeAllScripts } from '../utils/script-utils'
 import { CustomStyle, Visitor } from '../types/tawk'
@@ -45,6 +47,8 @@ const TawkLiveChat: FC<TawkLiveChatProps> = ({
 
   return null
 }
+
+TawkLiveChat.displayName = 'TawkLiveChat'
 
 export type { TawkLiveChatProps }
 export { TawkLiveChat }
