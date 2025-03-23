@@ -22,13 +22,14 @@ export default [
     },
     rules: {
       'prettier/prettier': 'error',
+      'react/react-in-jsx-scope': 'off',
+    },
+    settings: {
+      react: {
+        version: 'detect',
+      },
     },
   },
   configPrettier,
-  {
-    rules: {
-      'react/react-in-jsx-scope': 'off',
-    },
-  },
   globalIgnores(['!.storybook']),
 ]
